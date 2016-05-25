@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ember-internal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Rules used internally by Ember.js",
   "keywords": [
     "eslint",
