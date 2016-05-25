@@ -46,7 +46,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+- `require-yuidoc-access` - Ensures that every YUIDoc comment has `@public`, `@protected` or `@private` declared
 
 
 ## License
