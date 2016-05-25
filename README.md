@@ -47,6 +47,7 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 - `require-yuidoc-access` - Ensures that every YUIDoc comment has `@public`, `@protected` or `@private` declared
+- `no-const-outside-module-scope` - Prevent `const` from being used outside of the module scope (e.g. in functions)
 
 
 ## License
