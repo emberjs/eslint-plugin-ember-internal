@@ -16,8 +16,8 @@
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~2.6.0",
-    "mocha": "^2.5.3"
+    "eslint": "~3.2.2",
+    "mocha": "^3.0.1"
   },
   "license": "MIT",
   "directories": {
