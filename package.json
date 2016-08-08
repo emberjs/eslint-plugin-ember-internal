@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "eslint": "~2.6.0",
-    "mocha": "^2.5.3"
+    "mocha": "^3.0.2"
   },
   "license": "MIT",
   "directories": {
