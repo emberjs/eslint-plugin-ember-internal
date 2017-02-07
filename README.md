@@ -48,6 +48,16 @@ Then configure the rules you want to use under the rules section.
 
 - `require-yuidoc-access` - Ensures that every YUIDoc comment has `@public`, `@protected` or `@private` declared
 - `no-const-outside-module-scope` - Prevent `const` from being used outside of the module scope (e.g. in functions)
+- `no-empty-yuidoc-code-blocks` - Prevents empty code blocks in YUIDoc comments, e.g.
+
+    ```js
+    /**
+     * See code below:
+     *
+     * ```js
+     * ```
+     */
+    ```
 
 
 ## License
