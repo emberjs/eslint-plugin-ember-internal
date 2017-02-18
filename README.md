@@ -58,6 +58,21 @@ Then configure the rules you want to use under the rules section.
      * ```
      */
     ```
+- `require-yuidoc-code-block-type` - Ensures that every code blocks in YUIDoc comments has a type associated, e.g.
+
+    ```js
+    /**
+     * See code below:
+     *
+     * ```js
+     * good
+     * ```
+     *
+     * ```
+     * bad
+     * ```
+     */
+    ```
 
 
 ## License
