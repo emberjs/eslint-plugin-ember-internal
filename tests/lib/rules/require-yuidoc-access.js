@@ -17,7 +17,7 @@ var ruleTester = new RuleTester();
 ruleTester.run('require-yuidoc-access', rule, {
     valid: [
         '/*\nDummy method.\n\n@method foo\n@return {String}\n*/',
-        '/**\n@module ember\n@submodule ember-application\n*/\n'
+        '/**\n@module ember\n*/\n'
     ],
 
     invalid: [{
