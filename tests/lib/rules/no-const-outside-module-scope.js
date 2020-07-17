@@ -27,9 +27,11 @@ ruleTester.run('no-const-outside-module-scope', rule, {
 
   invalid: [{
     code: '{ const FOOBAR = 5; }',
+    output: '{ let FOOBAR = 5; }',
     errors: [{ message: '`const` should only be used in module scope (not inside functions/blocks).' }]
   }, {
     code: 'function foobar() { const FOOBAR = 5; return FOOBAR; }',
+    output: 'function foobar() { let FOOBAR = 5; return FOOBAR; }',
     errors: [{ message: '`const` should only be used in module scope (not inside functions/blocks).' }]
   }]
 });
