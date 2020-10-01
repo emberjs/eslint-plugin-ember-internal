@@ -1,0 +1,41 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    name: Linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ci-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: install dependencies
+        run: yarn install --frozen-lockfile --non-interactive
+      - name: linting
+        run: yarn lint
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '10', '12', '14' ]
+    name: Node ${{ matrix.node }} tests
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - uses: actions/cache@v2
+        with:
+          path: '**/node_modules'
+          key: ci-modules-${{ hashFiles('**/yarn.lock') }}
+      - name: install dependencies
+        run: yarn install --frozen-lockfile --non-interactive
+      - name: test
+        run: yarn test
