@@ -10,15 +10,19 @@
   "author": "Tobias Bieniek",
   "main": "lib/index.js",
   "scripts": {
+    "lint:fix": "yarn lint --fix",
+    "lint": "eslint .",
     "test": "mocha tests --recursive"
   },
   "dependencies": {
-    "line-column": "^1.0.2",
-    "requireindex": "~1.1.0"
+    "line-column": "^1.0.2"
   },
   "devDependencies": {
-    "eslint": "~2.6.0",
-    "mocha": "^3.0.2"
+    "eslint": "~7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "mocha": "^8.1.3",
+    "prettier": "^2.1.2"
   },
   "license": "MIT",
   "directories": {
@@ -26,10 +30,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Turbo87/eslint-plugin-ember-internal.git"
+    "url": "git+https://github.com/emberjs/eslint-plugin-ember-internal.git"
   },
   "bugs": {
-    "url": "https://github.com/Turbo87/eslint-plugin-ember-internal/issues"
+    "url": "https://github.com/emberjs/eslint-plugin-ember-internal/issues"
   },
-  "homepage": "https://github.com/Turbo87/eslint-plugin-ember-internal#readme"
+  "homepage": "https://github.com/emberjs/eslint-plugin-ember-internal#readme"
 }

@@ -7,7 +7,6 @@
 var rule = require('../../../lib/rules/no-const-outside-module-scope');
 var RuleTester = require('eslint').RuleTester;
 
-
 //------------------------------------------------------------------------------
 // Tests
 //------------------------------------------------------------------------------
@@ -15,8 +14,8 @@ var RuleTester = require('eslint').RuleTester;
 var ruleTester = new RuleTester({
   parserOptions: {
     ecmaVersion: 6,
-    sourceType: 'module'
-  }
+    sourceType: 'module',
+  },
 });
 
 ruleTester.run('no-const-outside-module-scope', rule, {
@@ -32,19 +31,26 @@ ruleTester.run('no-const-outside-module-scope', rule, {
           return listCount;
         }
       }
-    `
+    `,
   ],
 
-  invalid: [{
-    code: '{ const FOOBAR = 5; }',
-    output: '{ let FOOBAR = 5; }',
-    errors: [{ message: '`const` should only be used in module scope (not inside functions/blocks).' }]
-  }, {
-    code: 'function foobar() { const FOOBAR = 5; return FOOBAR; }',
-    output: 'function foobar() { let FOOBAR = 5; return FOOBAR; }',
-    errors: [{ message: '`const` should only be used in module scope (not inside functions/blocks).' }]
-  }, {
-    code: `
+  invalid: [
+    {
+      code: '{ const FOOBAR = 5; }',
+      output: '{ let FOOBAR = 5; }',
+      errors: [
+        { message: '`const` should only be used in module scope (not inside functions/blocks).' },
+      ],
+    },
+    {
+      code: 'function foobar() { const FOOBAR = 5; return FOOBAR; }',
+      output: 'function foobar() { let FOOBAR = 5; return FOOBAR; }',
+      errors: [
+        { message: '`const` should only be used in module scope (not inside functions/blocks).' },
+      ],
+    },
+    {
+      code: `
       import Controller from '@ember/controller';
       export default class extends Controller {
         get isControllerScope() {
@@ -53,7 +59,7 @@ ruleTester.run('no-const-outside-module-scope', rule, {
         }
       }
     `,
-    output: `
+      output: `
       import Controller from '@ember/controller';
       export default class extends Controller {
         get isControllerScope() {
@@ -62,6 +68,9 @@ ruleTester.run('no-const-outside-module-scope', rule, {
         }
       }
     `,
-    errors: [{ message: '`const` should only be used in module scope (not inside functions/blocks).' }]
-  }]
+      errors: [
+        { message: '`const` should only be used in module scope (not inside functions/blocks).' },
+      ],
+    },
+  ],
 });
