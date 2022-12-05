@@ -1,3 +1,25 @@
+
+## v3.0.0 (2022-12-05)
+
+#### :boom: Breaking Change
+* [#40](https://github.com/emberjs/eslint-plugin-ember-internal/pull/40) Strictly define Node API ([@bmish](https://github.com/bmish))
+* [#38](https://github.com/emberjs/eslint-plugin-ember-internal/pull/38) Drop support for ESLint v6 ([@bmish](https://github.com/bmish))
+* [#37](https://github.com/emberjs/eslint-plugin-ember-internal/pull/37) Drop support for Node 10, 12 ([@bmish](https://github.com/bmish))
+
+#### :memo: Documentation
+* [#41](https://github.com/emberjs/eslint-plugin-ember-internal/pull/41) Automate docs with eslint-doc-generator ([@bmish](https://github.com/bmish))
+* [#36](https://github.com/emberjs/eslint-plugin-ember-internal/pull/36) Link to eslint-plugin-ember ([@bmish](https://github.com/bmish))
+
+#### :house: Internal
+* [#44](https://github.com/emberjs/eslint-plugin-ember-internal/pull/44) Add ember keywords to npm ([@bmish](https://github.com/bmish))
+* [#43](https://github.com/emberjs/eslint-plugin-ember-internal/pull/43) Add dependabot ([@bmish](https://github.com/bmish))
+* [#42](https://github.com/emberjs/eslint-plugin-ember-internal/pull/42) Add release-it ([@bmish](https://github.com/bmish))
+* [#39](https://github.com/emberjs/eslint-plugin-ember-internal/pull/39) Update all dependencies ([@bmish](https://github.com/bmish))
+
+#### Committers: 1
+- Bryan Mishkin ([@bmish](https://github.com/bmish))
+
+
 ## v2.0.1 (2022-12-05)
 
 #### :bug: Bug Fix
