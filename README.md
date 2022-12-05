@@ -42,36 +42,12 @@ Then configure the rules you want to use under the rules section.
 }
 ```
 
-## Supported Rules
+## Rules
 
-- `require-yuidoc-access` - Ensures that every YUIDoc comment has `@public`, `@protected` or `@private` declared
-- `no-const-outside-module-scope` - Prevent `const` from being used outside of the module scope (e.g. in functions)
-- `no-empty-yuidoc-code-blocks` - Prevents empty code blocks in YUIDoc comments, e.g.
-
-    ```js
-    /**
-     * See code below:
-     *
-     * ```js
-     * ```
-     */
-    ```
-
-- `require-yuidoc-code-block-type` - Ensures that every code blocks in YUIDoc comments has a type associated, e.g.
-
-    ```js
-    /**
-     * See code below:
-     *
-     * ```js
-     * good
-     * ```
-     *
-     * ```
-     * bad
-     * ```
-     */
-    ```
+- [`no-const-outside-module-scope`](./docs/rules/no-const-outside-module-scope.md)
+- [`no-empty-yuidoc-code-blocks`](./docs/rules/no-empty-yuidoc-code-blocks.md)
+- [`require-yuidoc-access`](./docs/rules/require-yuidoc-access.md)
+- [`require-yuidoc-code-block-type`](./docs/rules/require-yuidoc-code-block-type.md)
 
 ## License
 
