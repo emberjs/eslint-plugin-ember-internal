@@ -1,4 +1,9 @@
-.idea/
-tests/
+.eslintrc.js
+.github/
 .gitignore
+.idea/
+.markdownlint.json
+.markdownlintignore
 .npmignore
+.prettierrc.js
+tests/
