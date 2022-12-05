@@ -7,10 +7,11 @@ module.exports = {
     'plugin:prettier/recommended',
   ],
   env: {
-    es2017: true,
+    es2020: true,
     node: true,
   },
   rules: {
+    'eslint-plugin/prefer-message-ids': 'off',
     'eslint-plugin/require-meta-docs-description': 'error',
     'eslint-plugin/require-meta-docs-url': [
       'error',
