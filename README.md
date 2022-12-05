@@ -49,6 +49,10 @@ Then configure the rules you want to use under the rules section.
 - [`require-yuidoc-access`](./docs/rules/require-yuidoc-access.md)
 - [`require-yuidoc-code-block-type`](./docs/rules/require-yuidoc-code-block-type.md)
 
+## Related
+
+- [eslint-plugin-ember](https://github.com/ember-cli/eslint-plugin-ember) - public ESLint rules for Ember.js
+
 ## License
 
 eslint-plugin-ember-internal is licensed under the [MIT License](LICENSE).
