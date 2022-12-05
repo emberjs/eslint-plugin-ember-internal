@@ -1,6 +1,8 @@
-# no-empty-yuidoc-code-blocks
+# Disallow empty code blocks in YUIDoc comments (`ember-internal/no-empty-yuidoc-code-blocks`)
 
-Prevents empty code blocks in YUIDoc comments, e.g.
+<!-- end auto-generated rule header -->
+
+## Examples
 
 ```js
 /**

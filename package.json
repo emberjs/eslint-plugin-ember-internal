@@ -14,9 +14,11 @@
     "lint": "npm-run-all \"lint:*\"",
     "lint:docs": "markdownlint \"**/*.md\"",
     "lint:docs:fix": "yarn lint:docs --fix",
+    "lint:eslint-docs": "yarn update:eslint-docs --check",
     "lint:js": "eslint .",
     "lint:js:fix": "yarn lint:js --fix",
-    "test": "mocha tests --recursive"
+    "test": "mocha tests --recursive",
+    "update:eslint-docs": "eslint-doc-generator"
   },
   "dependencies": {
     "line-column": "^1.0.2",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.0.0",
+    "eslint-doc-generator": "^1.0.2",
     "eslint-plugin-eslint-plugin": "^5.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
