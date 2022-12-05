@@ -1,5 +1,7 @@
 # eslint-plugin-ember-internal
 
+[![NPM version](https://img.shields.io/npm/v/eslint-plugin-ember-internal.svg?style=flat)](https://npmjs.org/package/eslint-plugin-ember-internal)
+
 Rules used internally by Ember.js
 
 ## Installation
