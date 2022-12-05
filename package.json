@@ -17,6 +17,7 @@
     "lint:eslint-docs": "yarn update:eslint-docs --check",
     "lint:js": "eslint .",
     "lint:js:fix": "yarn lint:js --fix",
+    "release": "release-it",
     "test": "mocha tests --recursive",
     "update:eslint-docs": "eslint-doc-generator"
   },
@@ -25,6 +26,7 @@
     "requireindex": "^1.2.0"
   },
   "devDependencies": {
+    "@release-it-plugins/lerna-changelog": "^5.0.0",
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-doc-generator": "^1.0.2",
@@ -34,7 +36,8 @@
     "markdownlint-cli": "^0.32.0",
     "mocha": "^10.0.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.0.0"
+    "prettier": "^2.0.0",
+    "release-it": "^15.5.1"
   },
   "peerDependencies": {
     "eslint": ">= 7"
@@ -53,5 +56,20 @@
   "bugs": {
     "url": "https://github.com/emberjs/eslint-plugin-ember-internal/issues"
   },
-  "homepage": "https://github.com/emberjs/eslint-plugin-ember-internal#readme"
+  "homepage": "https://github.com/emberjs/eslint-plugin-ember-internal#readme",
+  "release-it": {
+    "plugins": {
+      "@release-it-plugins/lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
+  }
 }
