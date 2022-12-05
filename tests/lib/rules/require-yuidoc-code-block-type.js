@@ -21,16 +21,14 @@ ruleTester.run('require-yuidoc-code-block-type', rule, {
 
   invalid: [
     {
-      code:
-        '/**\nDummy method.\n```js\ntest1\n```\n\nhello\n\n```\ntest2\n```\nhello2\n\n```\ntest3\n```\n\n@method foo\n@return {String}\n*/',
+      code: '/**\nDummy method.\n```js\ntest1\n```\n\nhello\n\n```\ntest2\n```\nhello2\n\n```\ntest3\n```\n\n@method foo\n@return {String}\n*/',
       errors: [
         { message: 'Code blocks require a type, like `javascript`, for doc comments.' },
         { message: 'Code blocks require a type, like `javascript`, for doc comments.' },
       ],
     },
     {
-      code:
-        '/**\nDummy method.\n```app/users/route.js\ntest1\n```\n\nhello\n\n```\ntest2\n```\nhello2\n\n@method foo\n@return {String}\n*/',
+      code: '/**\nDummy method.\n```app/users/route.js\ntest1\n```\n\nhello\n\n```\ntest2\n```\nhello2\n\n@method foo\n@return {String}\n*/',
       errors: [{ message: 'Code blocks require a type, like `javascript`, for doc comments.' }],
     },
     {
