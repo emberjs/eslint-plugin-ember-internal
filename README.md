@@ -51,4 +51,4 @@ Then configure the rules you want to use under the rules section.
 
 ## License
 
-eslint-plugin-chai-expect is licensed under the [MIT License](LICENSE).
+eslint-plugin-ember-internal is licensed under the [MIT License](LICENSE).
