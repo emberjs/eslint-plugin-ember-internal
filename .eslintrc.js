@@ -10,4 +10,14 @@ module.exports = {
     es2017: true,
     node: true,
   },
+  rules: {
+    'eslint-plugin/require-meta-docs-description': 'error',
+    'eslint-plugin/require-meta-docs-url': [
+      'error',
+      {
+        pattern:
+          'https://github.com/emberjs/eslint-plugin-ember-internal/tree/master/docs/rules/{{name}}.md',
+      },
+    ],
+  },
 };
