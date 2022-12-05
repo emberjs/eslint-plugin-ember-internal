@@ -5,7 +5,9 @@
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "ember",
+    "ember.js"
   ],
   "author": "Tobias Bieniek",
   "exports": "./lib/index.js",
