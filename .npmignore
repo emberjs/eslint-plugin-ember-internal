@@ -2,4 +2,3 @@
 tests/
 .gitignore
 .npmignore
-.travis.yml
