@@ -8,7 +8,8 @@
     "eslint-plugin"
   ],
   "author": "Tobias Bieniek",
-  "main": "lib/index.js",
+  "exports": "./lib/index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "npm-run-all \"lint:*\"",
     "lint:docs": "markdownlint \"**/*.md\"",
