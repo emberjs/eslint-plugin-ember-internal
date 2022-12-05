@@ -44,10 +44,18 @@ Then configure the rules you want to use under the rules section.
 
 ## Rules
 
-- [`no-const-outside-module-scope`](./docs/rules/no-const-outside-module-scope.md)
-- [`no-empty-yuidoc-code-blocks`](./docs/rules/no-empty-yuidoc-code-blocks.md)
-- [`require-yuidoc-access`](./docs/rules/require-yuidoc-access.md)
-- [`require-yuidoc-code-block-type`](./docs/rules/require-yuidoc-code-block-type.md)
+<!-- begin auto-generated rules list -->
+
+🔧 Automatically fixable by the [`--fix` CLI option](https://eslint.org/docs/user-guide/command-line-interface#--fix).
+
+| Name                                                                           | Description                                                                          | 🔧 |
+| :----------------------------------------------------------------------------- | :----------------------------------------------------------------------------------- | :- |
+| [no-const-outside-module-scope](docs/rules/no-const-outside-module-scope.md)   | disallow `const` from being used outside of the module scope (e.g. in functions)     | 🔧 |
+| [no-empty-yuidoc-code-blocks](docs/rules/no-empty-yuidoc-code-blocks.md)       | disallow empty code blocks in YUIDoc comments                                        |    |
+| [require-yuidoc-access](docs/rules/require-yuidoc-access.md)                   | require that every YUIDoc comment has `@public`, `@protected` or `@private` declared |    |
+| [require-yuidoc-code-block-type](docs/rules/require-yuidoc-code-block-type.md) | require that every code blocks in YUIDoc comments has a type associated              |    |
+
+<!-- end auto-generated rules list -->
 
 ## Related
 

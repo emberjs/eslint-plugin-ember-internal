@@ -1,3 +1,3 @@
-# require-yuidoc-access
+# Require that every YUIDoc comment has `@public`, `@protected` or `@private` declared (`ember-internal/require-yuidoc-access`)
 
-Ensures that every YUIDoc comment has `@public`, `@protected` or `@private` declared.
+<!-- end auto-generated rule header -->

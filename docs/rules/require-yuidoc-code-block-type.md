@@ -1,6 +1,8 @@
-# require-yuidoc-code-block-type
+# Require that every code blocks in YUIDoc comments has a type associated (`ember-internal/require-yuidoc-code-block-type`)
 
-Ensures that every code blocks in YUIDoc comments has a type associated.
+<!-- end auto-generated rule header -->
+
+## Examples
 
 ```js
 /**
